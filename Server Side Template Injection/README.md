@@ -807,6 +807,7 @@ $output = $twig > render (
 {{['id']|filter('system')}}
 {{['cat\x20/etc/passwd']|filter('system')}}
 {{['cat$IFS/etc/passwd']|filter('system')}}
+{{['id']|map('system')|join}}
 ```
 
 Example with an email passing FILTER_VALIDATE_EMAIL PHP.
